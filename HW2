@@ -1,0 +1,293 @@
+mav@mav-VirtualBox:~$ ls
+ snap    Документы   Изображения   Общедоступные   Шаблоны
+ Видео   Загрузки    Музыка       'Рабочий стол'
+mav@mav-VirtualBox:~$ ll
+итого 72
+drwxr-x--- 14 mav  mav  4096 июн  7 23:57  ./
+drwxr-xr-x  3 root root 4096 июн  7 23:24  ../
+-rw-------  1 mav  mav   149 июн  7 23:57  .bash_history
+-rw-r--r--  1 mav  mav   220 июн  7 23:24  .bash_logout
+-rw-r--r--  1 mav  mav  3771 июн  7 23:24  .bashrc
+drwx------ 10 mav  mav  4096 июн  7 23:40  .cache/
+drwx------ 10 mav  mav  4096 июн  7 23:47  .config/
+drwx------  3 mav  mav  4096 июн  7 23:39  .local/
+-rw-r--r--  1 mav  mav   807 июн  7 23:24  .profile
+drwx------  5 mav  mav  4096 июн  7 23:47  snap/
+-rw-r--r--  1 mav  mav     0 июн  7 23:52  .sudo_as_admin_successful
+drwxr-xr-x  2 mav  mav  4096 июн  7 23:39  Видео/
+drwxr-xr-x  2 mav  mav  4096 июн  7 23:39  Документы/
+drwxr-xr-x  3 mav  mav  4096 июн  7 23:47  Загрузки/
+drwxr-xr-x  2 mav  mav  4096 июн  7 23:39  Изображения/
+drwxr-xr-x  2 mav  mav  4096 июн  7 23:39  Музыка/
+drwxr-xr-x  2 mav  mav  4096 июн  7 23:39  Общедоступные/
+drwxr-xr-x  2 mav  mav  4096 июн  7 23:39 'Рабочий стол'/
+drwxr-xr-x  2 mav  mav  4096 июн  7 23:39  Шаблоны/
+mav@mav-VirtualBox:~$ pwd
+/home/mav
+mav@mav-VirtualBox:~$ mkdir students mentors
+mav@mav-VirtualBox:~$ ls
+ mentors   students   Документы   Изображения   Общедоступные   Шаблоны
+ snap      Видео      Загрузки    Музыка       'Рабочий стол'
+mav@mav-VirtualBox:~$ tree
+.
+├── mentors
+├── snap
+│   ├── firefox
+│   │   ├── 1232
+│   │   ├── common
+│   │   └── current -> 1232
+│   ├── snapd-desktop-integration
+│   │   ├── 10
+│   │   │   ├── Видео
+│   │   │   ├── Документы
+│   │   │   ├── Загрузки
+│   │   │   ├── Изображения
+│   │   │   ├── Музыка
+│   │   │   ├── Общедоступные
+│   │   │   ├── Рабочий стол
+│   │   │   └── Шаблоны
+│   │   ├── common
+│   │   └── current -> 10
+│   └── snap-store
+│       ├── 575
+│       ├── common
+│       └── current -> 575
+├── students
+├── Видео
+├── Документы
+├── Загрузки
+│   └── firefox.tmp
+│       ├── Temp-347ddf25-86fe-496a-ad3f-ff0351b9ae0e
+│       └── tmpaddon
+├── Изображения
+├── Музыка
+├── Общедоступные
+├── Рабочий стол
+└── Шаблоны
+
+33 directories, 1 file
+mav@mav-VirtualBox:~$ cd students/
+mav@mav-VirtualBox:~/students$ touch students_list.txt
+mav@mav-VirtualBox:~/students$ nano students_list.txt
+mav@mav-VirtualBox:~/students$ more students_list.txt
+Dmitry K.
+Антон Морев
+Ольга
+Evgeniya
+Ilnur Mukimov
+Denis R
+Temirlan Bagliev
+Koll
+A
+Nadezhda Sysoeva
+mav@mav-VirtualBox:~/students$ ls
+students_list.txt
+mav@mav-VirtualBox:~/students$ cd ..
+mav@mav-VirtualBox:~$ cd mentors/
+mav@mav-VirtualBox:~/mentors$ touch mentors_list.txt
+mav@mav-VirtualBox:~/mentors$ nano mentors_list.txt 
+mav@mav-VirtualBox:~/mentors$ more mentors_list.txt 
+Евгений Ринкевич
+Ксения Локтева
+Павел Церульников
+mav@mav-VirtualBox:~/mentors$ ls
+mentors_list.txt
+mav@mav-VirtualBox:~/mentors$ cd ..
+mav@mav-VirtualBox:~$ tree
+.
+├── mentors
+│   └── mentors_list.txt
+├── snap
+│   ├── firefox
+│   │   ├── 1232
+│   │   ├── common
+│   │   └── current -> 1232
+│   ├── snapd-desktop-integration
+│   │   ├── 10
+│   │   │   ├── Видео
+│   │   │   ├── Документы
+│   │   │   ├── Загрузки
+│   │   │   ├── Изображения
+│   │   │   ├── Музыка
+│   │   │   ├── Общедоступные
+│   │   │   ├── Рабочий стол
+│   │   │   └── Шаблоны
+│   │   ├── common
+│   │   └── current -> 10
+│   └── snap-store
+│       ├── 575
+│       ├── common
+│       └── current -> 575
+├── students
+│   └── students_list.txt
+├── Видео
+├── Документы
+├── Загрузки
+│   └── firefox.tmp
+│       ├── Temp-347ddf25-86fe-496a-ad3f-ff0351b9ae0e
+│       └── tmpaddon
+├── Изображения
+├── Музыка
+├── Общедоступные
+├── Рабочий стол
+└── Шаблоны
+
+33 directories, 3 files
+mav@mav-VirtualBox:~$ mv mentors/mentors_list.txt students/mentors_list.txt
+mav@mav-VirtualBox:~$ tree
+.
+├── mentors
+├── snap
+│   ├── firefox
+│   │   ├── 1232
+│   │   ├── common
+│   │   └── current -> 1232
+│   ├── snapd-desktop-integration
+│   │   ├── 10
+│   │   │   ├── Видео
+│   │   │   ├── Документы
+│   │   │   ├── Загрузки
+│   │   │   ├── Изображения
+│   │   │   ├── Музыка
+│   │   │   ├── Общедоступные
+│   │   │   ├── Рабочий стол
+│   │   │   └── Шаблоны
+│   │   ├── common
+│   │   └── current -> 10
+│   └── snap-store
+│       ├── 575
+│       ├── common
+│       └── current -> 575
+├── students
+│   ├── mentors_list.txt
+│   └── students_list.txt
+├── Видео
+├── Документы
+├── Загрузки
+│   └── firefox.tmp
+│       ├── Temp-347ddf25-86fe-496a-ad3f-ff0351b9ae0e
+│       └── tmpaddon
+├── Изображения
+├── Музыка
+├── Общедоступные
+├── Рабочий стол
+└── Шаблоны
+
+33 directories, 3 files
+mav@mav-VirtualBox:~$ rm mentors/ -r
+mav@mav-VirtualBox:~$ tree
+.
+├── snap
+│   ├── firefox
+│   │   ├── 1232
+│   │   ├── common
+│   │   └── current -> 1232
+│   ├── snapd-desktop-integration
+│   │   ├── 10
+│   │   │   ├── Видео
+│   │   │   ├── Документы
+│   │   │   ├── Загрузки
+│   │   │   ├── Изображения
+│   │   │   ├── Музыка
+│   │   │   ├── Общедоступные
+│   │   │   ├── Рабочий стол
+│   │   │   └── Шаблоны
+│   │   ├── common
+│   │   └── current -> 10
+│   └── snap-store
+│       ├── 575
+│       ├── common
+│       └── current -> 575
+├── students
+│   ├── mentors_list.txt
+│   └── students_list.txt
+├── Видео
+├── Документы
+├── Загрузки
+│   └── firefox.tmp
+│       ├── Temp-347ddf25-86fe-496a-ad3f-ff0351b9ae0e
+│       └── tmpaddon
+├── Изображения
+├── Музыка
+├── Общедоступные
+├── Рабочий стол
+└── Шаблоны
+
+32 directories, 3 files
+mav@mav-VirtualBox:~$ ls
+ snap       Видео       Загрузки      Музыка         'Рабочий стол'
+ students   Документы   Изображения   Общедоступные   Шаблоны
+mav@mav-VirtualBox:~$ mv students/ students_and_mentors/
+mav@mav-VirtualBox:~$ ls
+ snap                   Документы     Музыка          Шаблоны
+ students_and_mentors   Загрузки      Общедоступные
+ Видео                  Изображения  'Рабочий стол'
+mav@mav-VirtualBox:~$ rm students_and_mentors/ -r
+mav@mav-VirtualBox:~$ ls
+ snap    Документы   Изображения   Общедоступные   Шаблоны
+ Видео   Загрузки    Музыка       'Рабочий стол'
+mav@mav-VirtualBox:~$ ll
+итого 72
+drwxr-x--- 14 mav  mav  4096 июн  8 00:19  ./
+drwxr-xr-x  3 root root 4096 июн  7 23:24  ../
+-rw-------  1 mav  mav   243 июн  8 00:11  .bash_history
+-rw-r--r--  1 mav  mav   220 июн  7 23:24  .bash_logout
+-rw-r--r--  1 mav  mav  3771 июн  7 23:24  .bashrc
+drwx------ 10 mav  mav  4096 июн  7 23:40  .cache/
+drwx------ 10 mav  mav  4096 июн  7 23:47  .config/
+drwx------  3 mav  mav  4096 июн  7 23:39  .local/
+-rw-r--r--  1 mav  mav   807 июн  7 23:24  .profile
+drwx------  5 mav  mav  4096 июн  7 23:47  snap/
+-rw-r--r--  1 mav  mav     0 июн  7 23:52  .sudo_as_admin_successful
+drwxr-xr-x  2 mav  mav  4096 июн  7 23:39  Видео/
+drwxr-xr-x  2 mav  mav  4096 июн  7 23:39  Документы/
+drwxr-xr-x  3 mav  mav  4096 июн  7 23:47  Загрузки/
+drwxr-xr-x  2 mav  mav  4096 июн  7 23:39  Изображения/
+drwxr-xr-x  2 mav  mav  4096 июн  7 23:39  Музыка/
+drwxr-xr-x  2 mav  mav  4096 июн  7 23:39  Общедоступные/
+drwxr-xr-x  2 mav  mav  4096 июн  7 23:39 'Рабочий стол'/
+drwxr-xr-x  2 mav  mav  4096 июн  7 23:39  Шаблоны/
+mav@mav-VirtualBox:~$ 
+mav@mav-VirtualBox:~$ sudo systemctl enable ssh
+[sudo] пароль для mav: 
+Synchronizing state of ssh.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install enable ssh
+mav@mav-VirtualBox:~$ sudo systemctl start ssh
+mav@mav-VirtualBox:~$ sudo systemctl ststus ssh
+Unknown command verb ststus.
+mav@mav-VirtualBox:~$ sudo systemctl status ssh
+● ssh.service - OpenBSD Secure Shell server
+     Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: >
+     Active: active (running) since Tue 2022-06-07 23:55:54 MSK; 25min ago
+       Docs: man:sshd(8)
+             man:sshd_config(5)
+   Main PID: 11013 (sshd)
+      Tasks: 1 (limit: 1686)
+     Memory: 1.8M
+        CPU: 25ms
+     CGroup: /system.slice/ssh.service
+             └─11013 "sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups"
+
+июн 07 23:55:54 mav-VirtualBox systemd[1]: Starting OpenBSD Secure Shell serve>
+июн 07 23:55:54 mav-VirtualBox sshd[11013]: Server listening on 0.0.0.0 port 2>
+июн 07 23:55:54 mav-VirtualBox sshd[11013]: Server listening on :: port 22.
+июн 07 23:55:54 mav-VirtualBox systemd[1]: Started OpenBSD Secure Shell server.
+lines 1-16/16 (END)
+mav@mav-VirtualBox:~$ whoami
+mav
+mav@mav-VirtualBox:~$ ip addr
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:f3:df:c1 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.100.6/24 brd 192.168.100.255 scope global dynamic noprefixroute enp0s3
+       valid_lft 256581sec preferred_lft 256581sec
+    inet6 fe80::65ad:a2fa:fe37:6808/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+mav@mav-VirtualBox:~$ hostname -I
+192.168.100.6 
+mav@mav-VirtualBox:~$ 
