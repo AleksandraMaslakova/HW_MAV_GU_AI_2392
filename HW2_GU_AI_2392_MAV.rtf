@@ -1,0 +1,83 @@
+{\rtf1\ansi\ansicpg1251\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red57\green192\blue38;\red86\green32\blue244;
+}
+{\*\expandedcolortbl;;\csgray\c0;\cssrgb\c25704\c77963\c19556;\cssrgb\c41680\c25960\c96645;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 Last login: Tue Jun  7 20:35:39 on console\
+\
+The default interactive shell is now zsh.\
+To update your account to use zsh, please run `chsh -s /bin/zsh`.\
+For more details, please visit https://support.apple.com/kb/HT208050.\
+iMac-Sergej:~ sergeyutkin$ ssh-keygen\
+Generating public/private rsa key pair.\
+Enter file in which to save the key (/Users/sergeyutkin/.ssh/id_rsa): \
+/Users/sergeyutkin/.ssh/id_rsa already exists.\
+Overwrite (y/n)? y\
+Enter passphrase (empty for no passphrase): \
+Enter same passphrase again: \
+Your identification has been saved in /Users/sergeyutkin/.ssh/id_rsa.\
+Your public key has been saved in /Users/sergeyutkin/.ssh/id_rsa.pub.\
+The key fingerprint is:\
+SHA256:vOPZlomi/sl0vvpciBFIveQeFxz0LJUf9o11pMa7e3Q sergeyutkin@iMac-Sergej.local\
+The key's randomart image is:\
++---[RSA 3072]----+\
+|    .. oo...   ..|\
+|   . .o o+. o. .o|\
+|    .o....oo o++.|\
+|      +o..  ..o..|\
+|     ..oS     .  |\
+|      .o o     .E|\
+|      o =..o  ...|\
+|     o.*.=+    ..|\
+|   .oo=+Bo.   .. |\
++----[SHA256]-----+\
+iMac-Sergej:~ sergeyutkin$ ssh-copy-id mav@192.168.100.6\
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/Users/sergeyutkin/.ssh/id_rsa.pub"\
+The authenticity of host '192.168.100.6 (192.168.100.6)' can't be established.\
+ECDSA key fingerprint is SHA256:D6eNfBHynwAYQA7gE1EHLwMCFrqWtHrgFTzYLOalSs4.\
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes\
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed\
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys\
+mav@192.168.100.6's password: \
+\
+Number of key(s) added:        1\
+\
+Now try logging into the machine, with:   "ssh 'mav@192.168.100.6'"\
+and check to make sure that only the key(s) you wanted were added.\
+\
+iMac-Sergej:~ sergeyutkin$ ssh mav@192.168.100.6\
+Enter passphrase for key '/Users/sergeyutkin/.ssh/id_rsa': \
+Welcome to Ubuntu 22.04 LTS (GNU/Linux 5.15.0-35-generic x86_64)\
+\
+ * Documentation:  https://help.ubuntu.com\
+ * Management:     https://landscape.canonical.com\
+ * Support:        https://ubuntu.com/advantage\
+\
+116 \uc0\u1086 \u1073 \u1085 \u1086 \u1074 \u1083 \u1077 \u1085 \u1080 \u1081  \u1084 \u1086 \u1078 \u1077 \u1090  \u1073 \u1099 \u1090 \u1100  \u1087 \u1088 \u1080 \u1084 \u1077 \u1085 \u1077 \u1085 \u1086  \u1085 \u1077 \u1084 \u1077 \u1076 \u1083 \u1077 \u1085 \u1085 \u1086 .\
+2 \uc0\u1080 \u1079  \u1101 \u1090 \u1080 \u1093  \u1086 \u1073 \u1085 \u1086 \u1074 \u1083 \u1077 \u1085 \u1080 \u1081 , \u1103 \u1074 \u1083 \u1103 \u1102 \u1090 \u1089 \u1103  \u1089 \u1090 \u1072 \u1085 \u1076 \u1072 \u1088 \u1090 \u1085 \u1099 \u1084 \u1080  \u1086 \u1073 \u1085 \u1086 \u1074 \u1083 \u1077 \u1085 \u1080 \u1103 \u1084 \u1080  \u1073 \u1077 \u1079 \u1086 \u1087 \u1072 \u1089 \u1085 \u1086 \u1089 \u1090 \u1080 .\
+\uc0\u1063 \u1090 \u1086 \u1073 \u1099  \u1087 \u1088 \u1086 \u1089 \u1084 \u1086 \u1090 \u1088 \u1077 \u1090 \u1100  \u1076 \u1086 \u1087 \u1086 \u1083 \u1085 \u1080 \u1090 \u1077 \u1083 \u1100 \u1085 \u1099 \u1077  \u1086 \u1073 \u1085 \u1086 \u1074 \u1083 \u1077 \u1085 \u1080 \u1103  \u1074 \u1099 \u1087 \u1086 \u1083 \u1085 \u1080 \u1090 \u1077 : apt list --upgradable\
+\
+*** System restart required ***\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\b \cf3 mav@mav-VirtualBox
+\f0\b0 \cf2 :
+\f1\b \cf4 ~
+\f0\b0 \cf2 $ whoami\
+mav\
+
+\f1\b \cf3 mav@mav-VirtualBox
+\f0\b0 \cf2 :
+\f1\b \cf4 ~
+\f0\b0 \cf2 $ hostname -I\
+192.168.100.6 \
+
+\f1\b \cf3 mav@mav-VirtualBox
+\f0\b0 \cf2 :
+\f1\b \cf4 ~
+\f0\b0 \cf2 $ uname\
+Linux}
